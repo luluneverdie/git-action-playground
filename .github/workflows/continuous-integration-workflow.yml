@@ -16,3 +16,8 @@ jobs:
         id: hello
       - name: Echo the greeting's time
         run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+      - shell: cmd
+        env:
+          SUPER_SECRET: ${{ secrets.SuperSecret }}
+        run: |
+          example-command "%SUPER_SECRET%"
