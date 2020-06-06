@@ -8,6 +8,7 @@ This is a playground of git actions.
 ![Share data between jobs](https://github.com/klogic/git-action-playground/workflows/Share%20data%20between%20jobs/badge.svg) \
 ![Caching with npm](https://github.com/klogic/git-action-playground/workflows/Caching%20with%20npm/badge.svg) \
 ![Redis container example](https://github.com/klogic/git-action-playground/workflows/Redis%20container%20example/badge.svg?branch=master) \
+![PostgreSQL service example](https://github.com/klogic/git-action-playground/workflows/PostgreSQL%20service%20example/badge.svg?branch=master)
 
 ## Change Log
 
