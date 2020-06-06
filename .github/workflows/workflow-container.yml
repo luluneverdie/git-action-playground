@@ -8,3 +8,12 @@ jobs:
     services:
       redis:
         image: redis
+    steps:
+      - name: Hello world
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: ${{ secrets.WHO_TO_GREET }}
+        id: hello
+      - name: Echo the greeting's time
+        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+      - shell: bash
