@@ -11,11 +11,12 @@ on:
   push:
     branches:
       - master
-
 jobs:
-  build:
-    name: Greeting
+  any_name:
     runs-on: ubuntu-latest
-    
-      - name: Testing
-        run:  echo "kaka"
+    steps:
+      - name: Any Name Bash Test Step
+        shell: bash
+        run: |
+          echo "Lala"
+      
